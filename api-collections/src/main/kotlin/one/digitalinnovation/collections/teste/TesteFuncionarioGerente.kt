@@ -5,7 +5,9 @@ import one.digitalinnovation.collections.Gerente
 
 
 fun main(){
-    val Maria = Gerente("Maria", "123456789", (5000.0))
+    val Maria = Gerente("Maria", "123456789", 5000.0, "senha123")
 
     imprimeRelatorioFuncionario.imprime(Maria)
+
+    TesteAutenticacao().autentica(Maria)
 }
